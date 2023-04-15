@@ -9,6 +9,12 @@ export const GlobalStyle = createGlobalStyle`
       sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    background-image: radial-gradient(
+    circle farthest-corner at 10% 20%,
+    #3f4c6b 0%,
+    #3f4c6b 90%
+  );
+  color: #ffffff;
   }
   code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
@@ -24,8 +30,12 @@ p {
 }
 h2 {
   margin: 0 auto;
-  padding: 10px 0;
+  padding: 24px 0;
   text-align: center;
+  background-color: #3f4c6b;
+  box-shadow: 8px 8px 8px -8px #000000, -4px 0px 8px 0px #000000;
+  margin-left: -16px;
+  margin-right: -16px;
 }
 ul {
 	margin: 0;

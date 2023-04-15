@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import {
-  Section,
+  StatDiv,
   Title,
   StatList,
   StatItem,
@@ -11,7 +11,7 @@ import {
 
 export const Statistics = ({ stats, title }) => {
   return (
-    <Section>
+    <StatDiv>
       {title && <Title>{title}</Title>}
       <StatList>
         {stats.map((stat, i) => (
@@ -21,7 +21,7 @@ export const Statistics = ({ stats, title }) => {
           </StatItem>
         ))}
       </StatList>
-    </Section>
+    </StatDiv>
   );
 };
 
